@@ -1,4 +1,4 @@
-FROM tomcat:8.0
+FROM tomcat:8
 #EXPOSE 8090
-COPY webapp/target/webapp.war /usr/local/tomcat/webapps/webapp.war
+COPY target/*.war /usr/local/tomcat/webapps/dockeranible.war
 #ENTRYPOINT ["java","-jar","webapp.war"]
